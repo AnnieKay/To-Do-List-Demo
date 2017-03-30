@@ -1,9 +1,9 @@
-/* the to-do list style */
-
+/** styling the to-do list*/
 body{
    margin: 10% 15%;
   font-family: Lato, sans-seriff;
 }
+/** styling for the container DIV */
 #body{
   background-color: #eee;
 }
@@ -15,6 +15,7 @@ body{
 h2{
   padding: 3% 30% 1% 30%;
 }
+/** styles for the input and add button for new task*/
 #addtask{
   border-style:solid;
   border-width: 0px 0px 2px 0px;
@@ -30,52 +31,64 @@ h2{
   height:50%;
   font-size: 21px;
 }
-#addheading{
+#addheading, #todo{
   margin: 2% 25%;
 }
 hr{
   margin:4% 5%;
 }
-ul{ 
-  list-style:none;
+
+input, button {
+  outline: none;
+  
 }
-button{
-  border:none;
+button {
+  background: none;
+  border: 0px;
+  color: #888;
+  font-size: 15px;
+  width: 60px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
   cursor: pointer;
-  outline:none;
-  overflow: hidden;
-  background-color:none;
-  background-repeat: no-repeat;
 }
-#todo{
-  margin: 2% 25%;
+button:hover {
+  color: #333;
 }
-#firsttask{
+input[type="text"]:focus {
+  color: #333;
+}
+/**adding styles to the todo list div */
+
+#firsttask, #secondtask{
   padding:5px 100px;
   margin: 0% 10% 2% 5%;
-  border-radius:5%;
+  border-radius: 5%;
   border: 1px solid #ccc;
+}
+ul{ 
+  list-style:none;
 }
 .delete{
   margin: 0% 16% 2% 73%;
 }
-#secondtask{
-  padding:5px 100px;
-  margin: 0% 10% 2% 5%;
-  border-radius:5%;
-  border: 1px solid #ccc;
-}
+
 #uncompleted{
   border-style:solid;
   border-width: 0px 0px 2px 0px;
   border-color: #e23eff;
+}
+/* completed tasks */
+#completed-tasks label {
+  text-decoration: line-through;
+  color: #888;
 }
 #completetask{
     margin: 2% 25%;
 }
 #completedlist{
   padding:10% 10% 20% 10%;
-  font-size: 15px;
+  font-size: 20px;
 }
 #done-tasks{
   height: 70px;
