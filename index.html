@@ -3,22 +3,26 @@
     <header class="header">
       <h2>A SIMPLE TO DO LIST</h2>       
     </header>
+    
     <div id="addtask">
       <p id="addheading">CLICK ON '+' TO ADD A NEW TASK</p>
       <label><input id="new-task" type="text"><button id="add">+</button></label>
     </div>
+    
     <div id="uncompleted">
       <h3 id="todo">UNCOMPLETED TASKS</h3>
-      <ul>
+      <ul id="todolists">
         <li class="editMode"><input type="checkbox"><input id="firsttask" type="text" value="Go For A Run"><button class="edit"> Edit</button></br><button class="delete">Delete</button></li>
         <li class="editMode"><input type="checkbox"><input id="secondtask"type="text" value="Pay Utility Bills"><button class="edit"> Edit</button></br><button class="delete">Delete</button> </li>
       </ul>
     </div>
+    
     <div done-tasks>
       <h3 id="completetask">COMPLETED TASKS</h3>
-      <ul>
-        <li><input type="checkbox" checked/><label id="completedlist"><s>Buy Groceries</s></label><button id="delete">Delete</button> </li>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked/><label id="completedlist">Buy Groceries</label><button id="delete">Delete</button> </li>
       </ul>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
